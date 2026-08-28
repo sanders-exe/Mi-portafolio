@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Bryan Pineda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <button id="toggle-modo" aria-label="Cambiar modo claro/oscuro">🌙</button>
+        <div class="logo">Bryan Pineda</div>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio </a></li>
+                <li><a href="#Educacion">Educación</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li> 
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+        <main>
+        <section id="Inicio">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>Hola, soy Bryan Pineda, un estudiante de Ingenieria en Sistemas apasionado por aprender y crear experiencias digitales impactantes.</p>
+        </section>
+        <section id="Educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>Ingeniería en Sistemas - Universidad Universidad Nacional (2022 - Presente)</li>
+               <li>Técnico en Redes de Computadoras — Colegio Técnico de Liberia</li>
+            </ul>
+        </section>
+        <aside>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español (Nativo)</li>
+                <li>English (Intermedio)</li>
+            </ul>
+        </aside>
+        <section id="Habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Programación en Python, Java y C++</li>
+                <li>Desarrollo web con HTML, CSS y JavaScript</li>
+                <li>Gestión de bases de datos SQL y NoSQL</li>
+                <li>Trabajo en equipo y resolución de problemas</li>
+            </ul>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="grid-proyectos">
+            
+                <article class="proyecto">
+                    <img src="img/proyecto1.png" alt="Captura del proyecto Red LAN con Packet Tracer">
+                    <h3>Red LAN con Packet Tracer OSPF</h3>
+                    <p>Proyecto de capstone donde diseñé e implementé una red utilizando
+                Packet Tracer, incluyendo enrutamiento OSPF, NAT estático y dinámico,
+                y configuración de DNS/TFTP. Mi rol fue el diseño completo de la topología
+                y la configuración de todos los dispositivos de red.</p>
+                <a href="#" class="btn-detalle" data-proyecto="0">Ver detalle</a>
+                </article>
+                 <article class="proyecto">
+                    <img src="img/proyecto2.png" alt="Captura de proyecto sobre la gestión de empleados con interfaz">
+                    <h3>Gestion de empleados con interfaz web</h3>
+                    <p>Aplicación web para la gestión de empleados, incluyendo registro, actualización y eliminación de información.</p>
+                    <a href="#" class="btn-detalle" data-proyecto="1">Ver detalle</a>                </article>
+                <article class="proyecto">
+                    <img src="img/proyecto3.png" alt="Captura de proyecto sobre la gestion de un aeropuerto con interfaz">
+                    <h3>Gestion de un aeropuerto con interfaz web</h3>
+                    <p>Aplicación web para la gestión de un aeropuerto, incluyendo registro, actualización y eliminación de información.</p>
+                    <a href="#" class="btn-detalle" data-proyecto="2">Ver detalle</a>
+                </article>
+            </div>
+        </section>
+       
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" minlength="2">
+                    <span class="error" id="error-nombre"></span>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="error-email"></span>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <span class="error" id="error-mensaje"></span>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Bryan Pineda. Todos los derechos reservados.</p>
+    </footer>
+     <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-contenido">
+        <button class="modal-cerrar" id="modal-cerrar" aria-label="Cerrar">&times;</button>
+        <img id="modal-img" src="" alt="">
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-descripcion"></p>
+    </div>
+</div>
+    <script src="js/script.js"></script>
+   
+</body>
+
+</html>
