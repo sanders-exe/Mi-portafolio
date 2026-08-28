@@ -63,4 +63,4 @@ git clone https://github.com/tu-usuario/mi-portafolio.git
 ## Autor
 
 Bryan Alexander Pineda Aguilar
-Estudiante de Ingeniería en Sistemas de Información — UNA, Sede Liberia
+Estudiante de Ingeniería en Sistemas de Información — UNA, Sede Liberia 
