@@ -1,66 +1,17 @@
- Portafolio Personal - Bryan Pineda
+# Portafolio de Bryan Pineda
 
-Sitio web personal de una sola página que incluye mi currículum vitae y un portafolio con los proyectos que he desarrollado durante la carrera de Ingeniería en Sistemas de Información en la Universidad Nacional (UNA), Sede Liberia.
+Portafolio personal de un estudiante de Ingeniería en Sistemas de Información en la Universidad Nacional, Sede Liberia.
 
- Demo en vivo
+[Ver el portafolio en GitHub Pages](https://sanders-exe.github.io/Mi-portafolio/)
 
-[Ver sitio desplegado](#) <!-- completar con el link una vez hecho el deploy -->
+## Proyectos
 
-Descripción
+- **Bazar Nazareth de Hojancha.** Catálogo web y panel de administración con React, Vite, ASP.NET Core, EF Core y SQL Server. [Repositorio público](https://github.com/IgnacioTortuga/Bazar-Nasareth).
+- **Sistema POS Ponderosa.** Prototipo en JavaScript para caja, inventario y administración. Usa almacenamiento local y pruebas con Node.js. Repositorio privado.
+- **Gestión de aeropuerto.** Proyecto académico de gestión aeroportuaria con una captura original. Código fuente no disponible.
 
-Landing page de una sola página, navegable con anclas internas, que presenta mi perfil, formación académica, habilidades técnicas, idiomas y un portafolio con tres proyectos. Incluye un formulario de contacto con validación y envío real de correo.
+## Vista local
 
-Tecnologías utilizadas
+Desde la raíz del repositorio, serví los archivos con Live Server o ejecutá `python -m http.server 8000` y abrí `http://localhost:8000`.
 
-- HTML5 (estructura semántica: header, nav, main, section, aside, article, footer)
-- CSS3 (Flexbox, Grid, variables CSS, diseño responsivo con media queries)
-- JavaScript (sin frameworks)
-- Google Fonts (Space Grotesk)
-- EmailJS (para el envío de correos desde el formulario, sin backend)
-
-Funcionalidades
-
-- Botón de modo claro / oscuro, que cambia las variables de color con JavaScript
-- Validación del formulario de contacto (nombre, formato de email, mensaje no vacío) con mensajes de error
-- Envío real del formulario a mi correo usando EmailJS
-- Modal con el detalle de cada proyecto al hacer clic en "Ver detalle", sin salir de la página
-- Efectos hover en las tarjetas de proyecto y en los botones
-
-Estructura del proyecto
-
-```
-mi-portafolio/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── img/
-│   ├── proyecto1.png
-│   ├── proyecto2.png
-│   └── proyecto3.png
-└── README.md
-```
-
-Secciones del sitio
-
-- Inicio: presentación breve
-- Educación: formación académica y técnica
-- Idiomas: español (nativo), inglés (intermedio)
-- Habilidades: herramientas y tecnologías que manejo
-- Proyectos: portafolio con 3 proyectos, tarjetas y modal de detalle
-- Contacto: formulario con validación y envío de correo
-
-## Cómo verlo localmente
-
-1. Cloná el repositorio:
-```
-git clone https://github.com/tu-usuario/mi-portafolio.git
-```
-2. Abrí la carpeta en Visual Studio Code (o el editor que prefieras).
-3. Usá la extensión Live Server (clic derecho sobre index.html → "Open with Live Server"). No lo abras con doble clic directo, porque el envío de correo necesita que el sitio corra con http:// y no con file://.
-
-## Autor
-
-Bryan Alexander Pineda Aguilar
-Estudiante de Ingeniería en Sistemas de Información — UNA, Sede Liberia 
+El sitio usa HTML, CSS y JavaScript. El formulario requiere acceso a EmailJS y conserva el servicio y la plantilla configurados para el portafolio. La ruta anterior, `Tarea1/`, lleva a la página principal.
